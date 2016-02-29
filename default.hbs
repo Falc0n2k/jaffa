@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta http-equiv="Content-Type" content="text/html" charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1" />
+
+    <title>{{meta_title}}</title>
+    <meta name="description" content="{{meta_description}}" />
+
+    <meta name="HandheldFriendly" content="True" />
+    <meta name="MobileOptimized" content="320" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=no" />
+
+    <link rel="stylesheet" type="text/css" href="{{asset "css/normalize.min.css"}}" />
+    <link rel="stylesheet" type="text/css" href="{{asset "css/screen.min.css"}}" />
+    <link rel="stylesheet" type="text/css" href="{{asset "css/prism.min.css"}}" />
+
+    {{#if pagination.next}}<link href="{{pageUrl pagination.next}}" rel="prefetch" />{{/if}}
+
+    {{ghost_head}}
+
+    <meta name="google-site-verification" content="cLJEtSnvYL2O93Xw0h5AhP8O5Ez4aIVhAiEtCsNaWus" />
+
+</head>
+<body class="{{body_class}}">
+
+<header id="site-head">
+{{#if @blog.logo}}<a id="blog-logo" href="{{@blog.url}}"><div class="bloglogo" style="background: url({{@blog.logo}})"></div></a>{{/if}}
+        <h1 class="blog-title"><a href="{{@blog.url}}">{{@blog.title}}</a></h1>
+    {{> menu}}
+</header>
+        <p>&nbsp;</p>
+    </header>
+
+    {{{body}}}
+
+    <footer class="site-footer">
+        <div align="center"><a href="https://twitter.com/classicyuppie/"><i class="fa fa-twitter"></i></a> <a href="https://instagram.com/classicyuppie/"><i class="fa fa-instagram"></i></a> <a href="https://linkedin.com/in/classicyuppie/"><i class="fa fa-linkedin"></i></a> <a href="https://github.com/classicyuppie/"><i class="fa fa-github"></i></a> <a href="http://classicyuppie.com/rss/"><i class="fa fa-rss"></i></a></div>
+        <div class="inner">
+            <section><br/><a href="/colophon"><img src="http://forthebadge.com/images/badges/built-with-love.svg"></a></section>
+        </div>
+    </footer>
+
+    {{ghost_foot}}
+  <script type="text/javascript" src="https://code.jquery.com/jquery-1.11.3.min.js"></script>
+  <script type="text/javascript" src="https://mint.classicyuppie.com/?js"></script>
+	<script type="text/javascript" src="{{asset "js/ghostHunter.min.js"}}"></script>
+	<script type="text/javascript" src="{{asset "js/prism.min.js"}}"></script>
+  <script type="text/javascript" src="{{asset "js/index.min.js"}}"></script>
+</body>
+</html>
