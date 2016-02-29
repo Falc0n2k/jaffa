@@ -1,3 +1,3 @@
 # Changelog
 
-* 1.0 - 2013-10-18 (Initial commit)
+* 1.0 - 2016-02-28 (Initial commit)

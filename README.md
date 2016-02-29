@@ -26,4 +26,4 @@ See the [changelog](CHANGELOG.md) for release details.
 
 ## Copyright & License
 
-Copyright (c) 2013-2014 John Fox - Released under The MIT License.
+Copyright (c) 2016 John Fox - Released under The MIT License.
